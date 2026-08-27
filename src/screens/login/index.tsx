@@ -8,7 +8,7 @@ export function Loginscreen(props: LoginscreenProps) {
   return (
     <ImageBackground source={require('../../assets/imgs/background.png')} style={styles.background}>
       <View style={styles.container}>
-        <Text style={styles.logo}>APP</Text>
+        <Text style={styles.logo}>Teste de branch</Text>
       </View>
     </ImageBackground>
   );
