@@ -5,10 +5,11 @@ export interface BotaoProps {
     onPress():void;
     cor?: string;
 }
-export function Botao(props: BotaoProps) {
-    return ( <Pressable onPress={props.onPress}>
+export function Botao({texto, cor, onPress} : BotaoProps) {
+    
+        return ( <Pressable onPress={props.onPress}>
         <View style={[styles.botaoContainer, {backgroundColor: props.cor}]}>
-            <Text style={styles.botaoTexto}>{props.texto}</Text>
+            <Text style={styles.botaoTexto}>{texto}</Text>
         </View>
     </Pressable>)
 }
