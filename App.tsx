@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { ImageBackground, StyleSheet, View } from 'react-native';
-import { Loginscreen } from './src/screens/login';
+import CalculatorScreen from './src/screens/calculadora';
 
 const imagemFundo = require('./src/assets/imgs/background.png');
 
@@ -8,11 +8,12 @@ export default function App() {
   return (
     <ImageBackground source={imagemFundo} style={styles.background}>
       <View style={styles.container}>
-        <Loginscreen />
+      <CalculatorScreen />
       </View>
     </ImageBackground>
   );
 }
+
 
 const styles = StyleSheet.create({
   container: {
