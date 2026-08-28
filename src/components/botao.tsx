@@ -1,11 +1,11 @@
 import React, {Pressable, StyleSheet, Text, View} from 'react-native';
 
 export function Botao() {
-    <Pressable onPress={() => console.log("Clicou!")}>
+    return ( <Pressable onPress={() => console.log("Clicou!")}>
         <View style={styles.botaoContainer}>
             <Text style={styles.botaoTexto}>Botão</Text>
         </View>
-    </Pressable>
+    </Pressable>)
 }
 
 const styles = StyleSheet.create({

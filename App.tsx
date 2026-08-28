@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { ImageBackground, StyleSheet, View } from 'react-native';
 import CalculatorScreen from './src/screens/calculadora';
+import {Botao} from './src/components/botao';
 
 const imagemFundo = require('./src/assets/imgs/background.png');
 
@@ -8,7 +9,8 @@ export default function App() {
   return (
     <ImageBackground source={imagemFundo} style={styles.background}>
       <View style={styles.container}>
-      <CalculatorScreen />
+         <Botao/>
+         <Botao/>
       </View>
     </ImageBackground>
   );
