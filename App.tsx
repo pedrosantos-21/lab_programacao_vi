@@ -9,8 +9,9 @@ export default function App() {
   return (
     <ImageBackground source={imagemFundo} style={styles.background}>
       <View style={styles.container}>
-         <Botao/>
-         <Botao/>
+         <Botao texto= 'Botão 1' onPress={() => console.log('Clicou 1')} />
+         <Botao texto= 'Botão 2' onPress={() => console.log('Clicou 2')} cor="blue" />
+         <Botao texto= 'Botão 3' onPress={() => console.log('Clicou 3')} cor ="#00ff22"/>
       </View>
     </ImageBackground>
   );

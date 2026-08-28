@@ -1,9 +1,14 @@
 import React, {Pressable, StyleSheet, Text, View} from 'react-native';
 
-export function Botao() {
-    return ( <Pressable onPress={() => console.log("Clicou!")}>
-        <View style={styles.botaoContainer}>
-            <Text style={styles.botaoTexto}>Botão</Text>
+export interface BotaoProps {
+    texto: string;
+    onPress():void;
+    cor?: string;
+}
+export function Botao(props: BotaoProps) {
+    return ( <Pressable onPress={props.onPress}>
+        <View style={[styles.botaoContainer, {backgroundColor: props.cor}]}>
+            <Text style={styles.botaoTexto}>{props.texto}</Text>
         </View>
     </Pressable>)
 }
