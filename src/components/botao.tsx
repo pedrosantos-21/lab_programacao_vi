@@ -1,4 +1,5 @@
-import React, {Pressable, StyleSheet, Text, View} from 'react-native';
+import * as React from 'react'
+import { StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 
 export interface BotaoProps {
     texto: string;
@@ -6,18 +7,23 @@ export interface BotaoProps {
     cor?: string;
 }
 export function Botao({texto, cor, onPress} : BotaoProps) {
-    
-        return ( <Pressable onPress={onPress}>
+        console.log('Recriado!')
+        return ( <TouchableOpacity onPress={onPress}>
         <View style={[styles.botaoContainer, {backgroundColor: cor}]}>
             <Text style={styles.botaoTexto}>{texto}</Text>
         </View>
-    </Pressable>)
+    </TouchableOpacity>)
+}
+
+export default React.memo(Botao);
+
+Botao.deafaultProps = {
+    cor:'tomato'
 }
 
 const styles = StyleSheet.create({
     botaoContainer: {
         borderRadius: 10,
-        backgroundColor: 'tomato',
         padding: 10,
     },
     botaoTexto: {

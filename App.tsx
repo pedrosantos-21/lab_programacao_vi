@@ -1,19 +1,23 @@
-import React, {useState} from 'react';
-import { ImageBackground, StyleSheet, View } from 'react-native';
-import CalculatorScreen from './src/screens/calculadora';
+import React, {useState, useCallback} from 'react';
+import { ImageBackground, StyleSheet, View, TextInput, Text } from 'react-native';
 import {Botao} from './src/components/botao';
 
-const imagemFundo = require('./src/assets/imgs/background.png');
-
 export default function App() {
+
+    const [valor, setValor] = useState('');
+
+    const handleBotao = useCallback(() => {
+      console.log('Clicou 1')
+    }, [])
+
   return (
-    <ImageBackground source={imagemFundo} style={styles.background}>
       <View style={styles.container}>
-         <Botao texto= 'Botão 1' onPress={() => console.log('Clicou 1')} />
-         <Botao texto= 'Botão 2' onPress={() => console.log('Clicou 2')} cor="blue" />
-         <Botao texto= 'Botão 3' onPress={() => console.log('Clicou 3')} cor ="#00ff22"/>
+         <TextInput placeholder='digite aqui um valor' onChangeText={setValor}/>
+         <Text>{valor}</Text>
+         <Botao texto= 'Botão 1' onPress={handleBotao}/>
+         <Botao texto= 'Botão 2' onPress={handleBotao} cor="blue" />
+         <Botao texto= 'Botão 3' onPress={handleBotao} cor ="#00ff22"/>
       </View>
-    </ImageBackground>
   );
 }
 
