@@ -1,3 +1,4 @@
+import { Formik } from 'formik';
 import * as React from 'react'
 import { StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 
@@ -6,6 +7,7 @@ export interface BotaoProps {
     onPress():void;
     cor?: string;
 }
+
 export function Botao({texto, cor, onPress} : BotaoProps) {
         console.log('Recriado!')
         return ( <TouchableOpacity onPress={onPress}>
@@ -19,7 +21,7 @@ export default React.memo(Botao);
 
 Botao.deafaultProps = {
     cor:'tomato'
-}
+};
 
 const styles = StyleSheet.create({
     botaoContainer: {
