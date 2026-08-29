@@ -15,8 +15,18 @@ export function Loginscreen(props: LoginscreenProps) {
 }
 
 const styles = StyleSheet.create({
-  background: { flex: 1,width: '100%', height: '100%'},
-  container: { flex: 1, justifyContent: 'center', alignItems: 'center'},
-  logo: {color: 'white', fontSize: 50,textAlign: 'center',
+  background: { 
+    flex: 1,
+    width: '100%',
+    height: '100%',
+},
+  container: { flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+},
+  logo: {
+    color: 'white',
+    fontSize: 50,
+    textAlign: 'center',
   },
 });
