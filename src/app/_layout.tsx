@@ -1,5 +1,6 @@
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
+import { Tabs } from "expo-router/tabs"
 
 export default function Layout() {
   return (
@@ -18,6 +19,12 @@ export default function Layout() {
         <Stack.Screen name="tela2" options={{ title: 'Tela 2', headerStyle: { backgroundColor: 'green' } }} />
         <Stack.Screen name="tela3" options={{ title: 'Tela 3', headerStyle: { backgroundColor: 'purple' } }} />
       </Stack>
+
+      <Tabs>
+        <Tabs.Screen name="tela1/index"/>
+        <Tabs.Screen name="tela2/index"/>
+        <Tabs.Screen name="tela3/index"/>
+      </Tabs>
     </>
   );
 }
