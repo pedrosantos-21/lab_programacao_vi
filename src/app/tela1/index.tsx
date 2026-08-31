@@ -1,11 +1,10 @@
 import { router } from 'expo-router';
 import { Button, StyleSheet, Text, View } from 'react-native';
 
-export default function Home() {
+export default function Tela1() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Home</Text>
-      <Button title="Ir para Tela 1" onPress={() => router.push('/tela1')} />
+      <Text>Tela 1</Text>
       <Button
         title="Ir para Tela 2"
         onPress={() =>
@@ -15,7 +14,7 @@ export default function Home() {
           })
         }
       />
-      <Button title="Ir para Tela 3" onPress={() => router.push('/tela3')} />
+      <Button title="Voltar para Home" onPress={() => router.push('/')} />
     </View>
   );
 }
@@ -26,9 +25,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     gap: 12,
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
   },
 });
