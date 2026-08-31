@@ -11,11 +11,16 @@
   "dependencies": {
     "@types/yup": "^0.29.14",
     "expo": "^57.0.17",
-    "expo-status-bar": "~3.0.9",
+    "expo-constants": "~57.0.16",
+    "expo-linking": "~57.0.8",
+    "expo-router": "~57.0.17",
+    "expo-status-bar": "~57.0.1",
     "formik": "^2.4.9",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-native": "0.81.5",
+    "react-native-safe-area-context": "~5.7.0",
+    "react-native-screens": "~4.26.0",
     "react-native-web": "^0.21.0",
     "yup": "^1.7.1"
   },
