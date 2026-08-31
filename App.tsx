@@ -1,4 +1,4 @@
-import { Formik } from 'Formik';
+import { Formik } from 'formik';
 import * as Yup from 'yup';
 import React, {useState, useCallback} from 'react';
 import { ImageBackground, StyleSheet, View, TextInput, Text, Button } from 'react-native';
