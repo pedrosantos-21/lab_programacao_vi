@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "app-doceriabrownie", 
-    "slug": "app-doceriabrownie",
+    "name": "my-app",
+    "slug": "my-app",
     "scheme": "app",
     "version": "1.0.0",
     "orientation": "portrait",
